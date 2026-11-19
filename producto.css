@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fondo sixsve.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #313131;
+}
+
+header {
+    background-color: #F53D6D;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 6px 6px 6px #EB4CB2;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    color: floralwhite;
+    padding: 19px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-size: 17px;
+    margin: 7px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #d0ec72;
+}
+
+/* Estilo del Icono del Carrito en el Header */
+#cart-icon {
+    cursor: pointer;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    color: white;
+}
+
+#cart-icon:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#cart-count {
+    background: #fff;
+    color: #F53D6D;
+    border-radius: 50%;
+    padding: 2px 8px;
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+main {
+    padding: 3rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 450px; /* Ajustado ligeramente para que quepa bien el botón */
+    border-radius: 10px;
+    background-color: #f5c9c9f1;
+    margin: 20px;
+    border: 3px solid #f72565;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-titulo h2 {
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+    color: rgb(46, 31, 35);
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.precio {
+    font-size: 22px;
+    font-family: "Momo Trust Display", sans-serif;
+    color: #d90429;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Botón Añadir al Carrito con la estética Fruty */
+.add-to-cart {
+    background-color: #F53D6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.95rem;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-to-cart:hover {
+    background-color: #d90429;
+}
+
+/* --- SIDEBAR DEL CARRITO --- */
+#carrito {
+    background: #ffffff;
+    border-left: 3px solid #F53D6D;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.15);
+    width: 350px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+#carrito.abierto {
+    transform: translateX(0);
+}
+
+.carrito-header {
+    background: #F53D6D;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+.carrito-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#cerrar-carrito {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#lista-carrito {
+    list-style: none;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    font-family: "Alata", sans-serif;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-nombre {
+    font-weight: bold;
+    color: #313131;
+    margin-bottom: 3px;
+}
+
+.item-precio {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-eliminar {
+    color: #F53D6D;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.carrito-footer {
+    padding: 1.5rem;
+    background: #fff0f3;
+    border-top: 1px solid #ffccd5;
+    font-family: "Alata", sans-serif;
+}
+
+.carrito-footer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #313131;
+}
+
+#checkout {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+#checkout:hover {
+    background-color: #218838;
+}
+
+/* Footer original conservado */
+.fruty-footer {
+    background-color: #F53D6D;
+    color: floralwhite;
+    padding: 30px 20px 18px;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(235, 76, 178, 0.25);
+}
+
+.fruty-footer h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.fruty-footer .footer-slogan {
+    font-family: "Alata", sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ffd1df;
+    margin: 0 auto 18px;
+    border-radius: 5px;
+}
+
+.fruty-footer h3 {
+    font-family: "Alata", sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.fruty-footer .footer-thanks {
+    max-width: 600px;
+    margin: 0 auto 22px;
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.fruty-footer .footer-copy {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "Alata", sans-serif;
+    font-size: 12px;
+}

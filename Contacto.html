@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruty Tejidos / Contactos</title>
+    <link rel="icon" href="icons8-tejer-64.png">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <h1>Fruty tejidos</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main class="contacto-main">
+
+        <section class="contacto-card">
+
+            <span class="contacto-etiqueta">
+                🍓 Estamos para escucharte 🍃
+            </span>
+
+            <h2>¡Hablemos! ♡</h2>
+
+            <p class="contacto-intro">
+                ¿Tenés alguna consulta, idea o simplemente
+                querés saludarnos? ¡Nos encantaría leerte!
+            </p>
+
+            <form class="contacto-form" id="form-contacto">
+
+                <div class="campo">
+                    <label for="nombre">Tu nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="¿Cómo te llamás?"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="" disabled selected>
+                            Elegí un motivo
+                        </option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="productos">Consulta sobre productos</option>
+                        <option value="pedido">Pedido personalizado</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Tu mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribí tu mensaje aquí..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contacto-boton">
+                    Enviar mensajito ♡
+                </button>
+                <script>
+        document.getElementById("contacto-boton").onclick = function(){
+
+            alert("Tu mensaje fue enviado");
+        };
+    
+    
+    </script>
+            </form>
+
+            <p class="contacto-despedida">
+                Gracias por contactarte con Fruty tejidos ♡
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="fruty-footer">
+        <h2>Fruty tejidos 🍓</h2>
+        <p>Pequeños detalles, tejidos con amor ♡</p>
+        <h3>♡ Agradecimientos ♡</h3>
+
+    <p class="footer-thanks">
+        Gracias tung tung sahur, gracias mami, gracias 67, gracias aguas del norte, gracias totales, gracias facu, gracias airbag.
+    </p>
+        <p class="footer-copy">
+            Hecho con cariño · Fruty tejidos © 2026
+        </p>
+    </footer>
+
+
+
+</body>
+</html>

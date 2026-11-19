@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fondo sixsve.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #F53D6D;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 6px 6px 6px #EB4CB2;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    color: floralwhite;
+    padding: 19px;
+    text-decoration: none;
+}
+.titulo{
+    text-align: center;
+    font-family: "Alata", sans-serif;
+}
+header a{
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-size: 17px;
+    margin: 7px;
+        color: #fff;
+
+}
+
+header a:hover{
+    color: #d0ec72;
+}
+
+/* ===== PÁGINA DE CONTACTO ===== */
+
+.contacto-main {
+    display: flow-root;
+    width: 100%;
+    min-height: 75vh;
+    padding: 45px 18px 60px;
+
+    background: transparent;
+}
+
+/* Tarjeta principal */
+
+.contacto-card {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px 38px;
+
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.78);
+
+    border: 2px solid #ff4778;
+    border-radius: 24px;
+
+    box-shadow: 0 8px 24px rgba(255, 71, 120, 0.13);
+
+    text-align: center;
+}
+
+/* Etiqueta superior */
+
+.contacto-etiqueta {
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 30px;
+
+    background: #ffe0e9;
+    color: #f72565;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Título y presentación */
+
+.contacto-card h2 {
+    margin: 18px 0 12px;
+
+    color: #ff3472;
+    font-size: 30px;
+    font-family: inherit;
+}
+
+.contacto-intro {
+    max-width: 480px;
+    margin: 0 auto 26px;
+
+    color: #51454b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Formulario */
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    text-align: left;
+}
+
+.contacto-form .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contacto-form label {
+    color: #392831;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contacto-form input,
+.contacto-form select,
+.contacto-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    box-sizing: border-box;
+    border: 1px solid #efc6d3;
+    border-radius: 11px;
+
+    background: #ffffff;
+    color: #392831;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Efecto al seleccionar un campo */
+
+.contacto-form input:focus,
+.contacto-form select:focus,
+.contacto-form textarea:focus {
+    border-color: #ff4778;
+    box-shadow: 0 0 0 3px rgba(255, 71, 120, 0.12);
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+    color: #a89aa0;
+}
+
+.contacto-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+/* Botón */
+
+.contacto-boton {
+    width: 100%;
+    padding: 13px 20px;
+    margin-top: 3px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #ff3472;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.contacto-boton:hover {
+    background: #e92360;
+    transform: translateY(-2px);
+}
+
+.contacto-boton:focus-visible {
+    outline: 3px solid #bd174c;
+    outline-offset: 3px;
+}
+
+/* Mensaje final */
+
+.contacto-despedida {
+    margin: 22px 0 0;
+
+    color: #f43b70;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.fruty-footer {
+    background-color: #F53D6D;
+    color: floralwhite;
+
+    padding: 30px 20px 18px;
+    margin-top: 50px;
+
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(235, 76, 178, 0.25);
+}
+
+.fruty-footer h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.fruty-footer .footer-slogan {
+    font-family: "Alata", sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ffd1df;
+    margin: 0 auto 18px;
+    border-radius: 5px;
+}
+
+.fruty-footer h3 {
+    font-family: "Alata", sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.fruty-footer .footer-thanks {
+    max-width: 600px;
+    margin: 0 auto 22px;
+
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.fruty-footer .footer-copy {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-family: "Alata", sans-serif;
+    font-size: 12px;
+}
+/* Celulares */
+
+@media (max-width: 600px) {
+    .contacto-main {
+        padding: 30px 14px 40px;
+    }
+
+    .contacto-card {
+        padding: 27px 20px;
+        border-radius: 20px;
+    }
+
+    .contacto-card h2 {
+        font-size: 26px;
+    }
+
+    .contacto-intro {
+        font-size: 14px;
+    }
+
+    .contacto-form {
+        gap: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contacto-form input,
+    .contacto-form select,
+    .contacto-form textarea,
+    .contacto-boton {
+        transition: none;
+    }
+}
+@media (max-width: 600px) {
+    .fruty-footer {
+        padding: 26px 18px 16px;
+        margin-top: 35px;
+    }
+
+    .fruty-footer h2 {
+        font-size: 22px;
+    }
+
+    .fruty-footer .footer-thanks {
+        font-size: 13px;
+    }
+}

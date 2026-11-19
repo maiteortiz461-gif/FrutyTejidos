@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fondo sixsve.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+header{
+    background-color: #F53D6D;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 6px 6px 6px #EB4CB2;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    color: floralwhite;
+    padding: 19px;
+}
+main{
+    justify-content: center;
+   
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; /* Espacio arriba y abajo para que respire */
+    width: 100%;
+}
+
+.welcome-container {
+    background: rgba(255, 255, 255, 0.78);
+    border: 3px solid #ff4d79; /* Un borde rosa fuerte que combine con tu header */
+    border-radius: 20px; /* Bordes bien redondeados, estilo tierno */
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 700px;
+    color: #F53D6D;
+    
+
+}
+.welcome-container2{
+    background: rgba(255, 255, 255, 0.78);
+    border: 3px solid #ff4d79; /* Un borde rosa fuerte que combine con tu header */
+    border-radius: 20px; /* Bordes bien redondeados, estilo tierno */
+    padding: 30px 40px;
+    color: #F53D6D;
+    text-align: center;
+
+}
+.welcome-badge {
+
+    color: #ff2a6d;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.welcome-container h1 {
+    color: #ff2a6d;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.welcome-container p {
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.welcome-btn {
+    display: inline-block;
+    background-color: #ff2a6d;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.welcome-btn:hover {
+    background-color: #e01b57;
+    transform: scale(1.05); /* Pequeño efecto de zoom al pasar el mouse */
+}
+header a{
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-size: 17px;
+    margin: 7px;
+    color: #fff;
+
+}
+header a:hover{
+    color: #d0ec72;
+}
+.card{
+    width: 300px;
+    height: 400px ;
+    border-radius:10px ;
+    background-color: #f5c9c9f1;
+    margin: 30px;
+    border: 3px solid #f72565;
+
+
+}
+.grupo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+.card h2{
+    text-align: center;
+    font-family: inherit;
+    color: rgb(46, 31, 35);
+    margin: 12px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+p{
+    font-size: 20px;
+    font-family:"Momo Trust Display", sans-serif;
+    text-align: center;
+    color: #313131;
+    margin: 9px;
+}
+.card:hover{
+    margin-top: 15px;
+}
+ 
+/* Sección informativa de Fruty Tejidos */
+.fruty-about {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 42px 30px;
+  box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.78);
+  border: 2px solid #ff4778;
+  border-radius: 25px;
+
+  box-shadow: 0 8px 22px rgba(255, 71, 120, 0.10);
+}
+
+/* Encabezado */
+.fruty-about__header {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.fruty-about__tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 30px;
+
+  background: #ffe0e9;
+  color: #f72565;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fruty-about__header h2 {
+  margin: 18px 0 12px;
+  color: #ff3472;
+  font-size: 32px;
+}
+
+.fruty-about__header p {
+  margin: 0;
+  color: #51454b;
+  font-size: 16px;
+  line-height: 1.8; 
+  /* interlineado */
+}
+
+/* Tarjetas */
+.fruty-about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.fruty-about__card {
+  padding: 25px 18px;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #ffd0de;
+  border-radius: 18px;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.fruty-about__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(255, 71, 120, 0.13);
+}
+
+.fruty-about__icon {
+  display: inline-block;
+  color: #ff3472;
+  font-size: 36px;
+}
+
+.fruty-about__card h3 {
+  margin: 12px 0 8px;
+  color: #292029;
+  font-size: 19px;
+}
+
+.fruty-about__card p {
+  margin: 0;
+  color: #655760;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Frase final */
+.fruty-about__footer {
+  margin-top: 30px;
+  color: #f43b70;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+
+/* ===== FOOTER FRUTY TEJIDOS ===== */
+
+.fruty-footer {
+    background-color: #F53D6D;
+    color: floralwhite;
+
+    padding: 30px 20px 18px;
+    margin-top: 50px;
+
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(235, 76, 178, 0.25);
+}
+
+.fruty-footer h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.fruty-footer .footer-slogan {
+    font-family: "Alata", sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ffd1df;
+    margin: 0 auto 18px;
+    border-radius: 5px;
+}
+
+.fruty-footer h3 {
+    font-family: "Alata", sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.fruty-footer .footer-thanks {
+    max-width: 600px;
+    margin: 0 auto 22px;
+
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.fruty-footer .footer-copy {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-family: "Alata", sans-serif;
+    font-size: 12px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .fruty-footer {
+        padding: 26px 18px 16px;
+        margin-top: 35px;
+    }
+
+    .fruty-footer h2 {
+        font-size: 22px;
+    }
+
+    .fruty-footer .footer-thanks {
+        font-size: 13px;
+    }
+}
+
+/* Adaptación a celulares */
+@media (max-width: 700px) {
+  .fruty-about {
+    margin: 40px 16px;
+    padding: 30px 18px;
+  }
+
+  .fruty-about__header h2 {
+    font-size: 27px;
+  }
+
+  .fruty-about__cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fruty-about__card {
+    padding: 22px 18px;
+  }
+}
+
+
+@media(max-width: 768px){
+    header{
+        background-color: #EB4CB2;
+        color: #fff;
+        box-shadow: 6px 6px 6px rgb(51, 20, 70);
+    }
+}
